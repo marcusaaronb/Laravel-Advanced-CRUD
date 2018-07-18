@@ -46,9 +46,9 @@ cd projectname
 
 composer install
 rename .env.example to .env then open change
-DB_DATABASE=students <!--- ('your database name') -->  
-DB_USERNAME=root <!--- ('phpmyadmin username') -->
-DB_PASSWORD= <!--- ('phpmyadmin password') -->
+DB_DATABASE=your database name  
+DB_USERNAME=phpmyadmin username
+DB_PASSWORD=phpmyadmin password
 
 php artisan migrate --seed
 php artisan serve
