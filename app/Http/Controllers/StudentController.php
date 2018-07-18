@@ -14,7 +14,6 @@ class StudentController extends Controller
      */
     public function index()
     {
-
         return view('students.index');
     }
 
@@ -36,9 +35,15 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        Student::create($request->all());
+        try
+        {
+            Student::create($request->all());
 
-        return response()->json(['success' => 'data is successfully added'], 200);
+            return response()->json(['success' => 'data is successfully added'], 200);
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
+
     }
 
     /**
@@ -60,9 +65,15 @@ class StudentController extends Controller
      */
     public function edit(Student $student)
     {
-        $student = Student::findOrFail($student->id);
+        try
+        {
+            $student = Student::findOrFail($student->id);
 
-        return response()->json(['success' => 'successfull retrieve data', 'data' => $student->toJson()], 200);
+            return response()->json(['success' => 'successfull retrieve data', 'data' => $student->toJson()], 200);
+
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
     }
 
     /**
@@ -74,14 +85,20 @@ class StudentController extends Controller
      */
     public function update(Request $request, Student $student)
     {
-        $student = Student::findOrFail($student->id);
-        $student->name = $request->name;
-        $student->cnum = $request->cnum;
-        $student->email = $request->email;
-        $student->address = $request->address;
-        $student->update();
+        try
+        {
 
-        return response()->json(['success' => 'data is successfully updated'], 200);
+            $student = Student::findOrFail($student->id);
+            $student->name = $request->name;
+            $student->cnum = $request->cnum;
+            $student->email = $request->email;
+            $student->address = $request->address;
+            $student->update();
+
+            return response()->json(['success' => 'data is successfully updated'], 200);
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
     }
 
     /**
@@ -92,8 +109,14 @@ class StudentController extends Controller
      */
     public function destroy(Student $student)
     {
-        Student::destroy($student->id);
+        try
+        {
 
-        return response()->json(['success' => 'data is successfully deleted'], 200);
+            Student::destroy($student->id);
+
+            return response()->json(['success' => 'data is successfully deleted'], 200);
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
     }
 }
