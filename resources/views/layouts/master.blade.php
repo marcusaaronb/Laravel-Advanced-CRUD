@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    @include('layouts.header');
+    @include('layouts.header')
 
     <br><br><br><br>
     <div class="container">
@@ -34,7 +34,7 @@
         </div>
     </div>
     
-    @include('layouts.footer');
+    @include('layouts.footer')
 
     {{--  script  --}}
     <script src="https://datatables.yajrabox.com/js/jquery.min.js"></script>
