@@ -41,15 +41,13 @@ A step by step series of examples that tell you how to get a development env run
 Say what the step will be
 
 ```
+create database first untile open your project
 cd projectname
 php artisan migrate --seed
 php artisan serve
-```
 
-And repeat
-
-```
-until finished
+open browser type url ("localhost:8000")
+start application happy coding :)
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
