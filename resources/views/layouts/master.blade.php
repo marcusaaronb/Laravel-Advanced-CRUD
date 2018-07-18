@@ -22,7 +22,15 @@
     <br><br><br><br>
     <div class="container">
         <div class="row">
+
+             @if(session('status'))
+                <div class="alert alert-{{ session('alert') }}">
+                    {{ session('status') }}
+                </div>
+            @endif
+            
             @yield('content')
+
         </div>
     </div>
     

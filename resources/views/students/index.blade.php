@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 @endsection
 
+@section('brand')
+    ADVANCED
+@endsection
+
 @section('content')
 
     <div class="panel panel-default">

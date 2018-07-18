@@ -32,3 +32,14 @@ $factory->define(App\Student::class, function (Faker\Generator $faker) {
         'address' => $faker->address,
     ];
 });
+
+$factory->define(App\Employee::class, function (Faker\Generator $faker) {
+
+    return [
+        'name' => $faker->name,
+        'job_description' => str_random(10),
+        'cnum' => $faker->phoneNumber,
+        'email' => $faker->unique()->safeEmail,
+        'address' => $faker->address,
+    ];
+});
