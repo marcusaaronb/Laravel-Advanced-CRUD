@@ -43,6 +43,13 @@ Say what the step will be
 ```
 create database first untile open your project
 cd projectname
+
+composer install
+rename .env.example to .env then open change
+DB_DATABASE=students <!--- ('your database name') -->  
+DB_USERNAME=root <!--- ('phpmyadmin username') -->
+DB_PASSWORD= <!--- ('phpmyadmin password') -->
+
 php artisan migrate --seed
 php artisan serve
 
