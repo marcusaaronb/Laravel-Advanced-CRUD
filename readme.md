@@ -41,8 +41,8 @@ A step by step series of examples that tell you how to get a development env run
 Say what the step will be
 
 ```
-create database first untile open your project
-cd projectname
+create database first before open your project
+cd Laravel-Advanced-CRUD
 
 composer install
 rename .env.example to .env then open change
