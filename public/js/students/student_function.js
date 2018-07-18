@@ -77,7 +77,7 @@ $(function () {
                     $('.address').val(json.address);
 
                     $('#modalEdit').modal('show');
-                    $('.modal-title').text('Update');
+                    $('.modal-title').text('Update Student');
                 }
 
             }
