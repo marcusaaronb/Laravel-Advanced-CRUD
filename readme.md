@@ -15,6 +15,16 @@ Laravel Advanced CRUD Operation
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+### Screen Shots
+
+![1](https://user-images.githubusercontent.com/16932359/42864266-73c4ce50-8a98-11e8-9e05-eda46767cb05.png)
+
+![2](https://user-images.githubusercontent.com/16932359/42864309-9618de24-8a98-11e8-870e-7435b8940dfc.png)
+
+![3](https://user-images.githubusercontent.com/16932359/42864319-a0cb66d4-8a98-11e8-9c8c-1971ef63810d.png)
+
+![4](https://user-images.githubusercontent.com/16932359/42864333-a928bef8-8a98-11e8-82cb-729b798b3d11.png)
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
