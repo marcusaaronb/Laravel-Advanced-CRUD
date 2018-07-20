@@ -67,8 +67,6 @@ class StudentController extends Controller
     {
         try
         {
-            $student = Student::findOrFail($student->id);
-
             return response()->json(['success' => 'successfull retrieve data', 'data' => $student->toJson()], 200);
 
         } catch (\Exception $e) {
@@ -111,7 +109,6 @@ class StudentController extends Controller
     {
         try
         {
-
             Student::destroy($student->id);
 
             return response()->json(['success' => 'data is successfully deleted'], 200);

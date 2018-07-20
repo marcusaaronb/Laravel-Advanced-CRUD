@@ -9,7 +9,7 @@
 
 # Project Title
 
-Laravel Advanced CRUD Operation
+Laravel CRUD Operation
 
 ## Getting Started
 
